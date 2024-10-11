@@ -23,6 +23,6 @@ A working solution to retrieve reese84 cookie to access Imperva/Incapsula protec
 - Clone, modify, and use it however you want.
 
 ## Contact
-📫 Feel free to contact us to have a demo: 
+📫 Feel free to contact us to have get your temporary API key: 
 - Email: hj@ganhj.dev
 - Discord: crazyrex
