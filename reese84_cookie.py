@@ -46,7 +46,7 @@ class Reese84Cookie:
         task_status = get_task_result_request["task_status"]
         while task_status == "queued" or task_status == "running":
             self.logger.debug(f"Task is still processing -> {get_task_result_request}")
-            sleep(1)
+            sleep(2)
             get_task_result_request = get(
                 f"{self.base_url}/imperva-v2/{task_id}",
                 headers={"X-API-Key": self.api_key},
@@ -64,13 +64,14 @@ class Reese84Cookie:
         return self.get_task_result(task_id)
 
 if __name__ == '__main__':
-    base_url = "https://imperva-v2-test-api.ganhj.dev"
+    base_url = "https://imperva.ganhj.dev"
     api_key = "FLASH_API_XXXXXX" # Contact us to get temp. API key
     target_url = "https://ticketmaster.sg/epsf/eps-d?d=ticketmaster.sg" # Find the target url with "?d="
+    proxy = "http://user:password@proxy.packetstream.io:31112"
     
     print(f"Target URL => {target_url}")
     start_time = time.time()
     reese84_solver = Reese84Cookie(base_url=base_url, api_key=api_key)
-    reese84_token = reese84_solver.solve_captcha(url=target_url)
+    reese84_token = reese84_solver.solve_captcha(url=target_url,proxy=proxy)
     print(f"reese84 => {reese84_token}")
     print(f"Time taken => {(time.time() - start_time):.3f}s")
