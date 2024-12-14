@@ -15,9 +15,10 @@ A working solution to retrieve reese84 cookie to access Imperva/Incapsula protec
 
 
 ## Available Pricing
-### **Shared/Dedicated Host** - *as low as USD 15 per month*
+### **API Service** ([imperva.ganhj.dev](https://imperva.ganhj.dev)) - *as low as USD 25 per month*
 - Host and managed by us
 - As easy as calling an API to get your reese84 cookie value.
+- Flexbile pricing, unlimited request with rate limit or limited request without rate limit.
 ### **Full Source**
 - Access to the complete source code.
 - Clone, modify, and use it however you want.
